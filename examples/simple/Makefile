@@ -10,7 +10,7 @@ all: $(output_filename)
 $(output_filename): $(objects)
 
 $(objects): %.o: %.c -li
-	$(cc) $(CFLAGS) $< -o $(output_filename)
+	$(cc) $(libraries_path)/libi.so $(CFLAGS) $< -o $(output_filename)
 
 clean:
 	-rm -f $(output_filename)
