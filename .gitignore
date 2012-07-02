@@ -1,0 +1,16 @@
+# Compilation output files
+lib/*
+bin/*
+*.so
+*.a
+*.o
+
+# IDE-specific files
+*.swp
+
+# Hidden files that aren't git-related
+.*
+!.gitslave
+!.gitignore
+!.gitmodules
+
