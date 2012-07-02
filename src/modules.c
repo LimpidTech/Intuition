@@ -1,5 +1,5 @@
 #include <dlfcn.h>
-#include "intuition/modules.h"
+#include <intuition/modules.h>
 
 i_module load_module(char *moduleName) {
 }
