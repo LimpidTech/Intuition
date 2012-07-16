@@ -1,4 +1,5 @@
 cc=gcc
+cxx=g++
 objects=modules.o
 output_filename=$(libraries_path)/libi.so
 
@@ -7,6 +8,9 @@ $(output_filename): $(objects)
 
 $(objects): %.o: %.c
 	$(cc) $(CFLAGS) -fPIC -c $<
+
+$(objects): %.o: %.cxx
+	$(cxx) $(CFLAGS) -fPIC -c $<
 
 clean:
 	-rm -f $(objects)
